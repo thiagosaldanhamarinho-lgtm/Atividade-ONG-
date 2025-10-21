@@ -4,3 +4,10 @@
     box-sizing: border-box;
     background-color: white;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #579BD9;
+    border: 2px solid #579BD9;
+}
