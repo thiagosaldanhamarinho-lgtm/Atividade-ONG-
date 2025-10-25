@@ -1,77 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
     background-color: white;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border: 2px solid #579BD9;
     margin: 50px 10px 50px 10px;
-    padding: auto;  
+    padding: auto;
 }
 
-.header{
+header {
     text-align: center;
     background-color: #5399db;
     padding: auto;
     border-bottom: 2px solid #579BD9;
 }
 
-.main{
+header > a {
+    text-decoration: none;
+    color: rgb(32, 110, 152);
+    
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    gap: 20px;
-}
-
-.main a{
-    text-decoration: none;
-    color: black;
-    border: 2px solid #dee1e4;
-    padding: 2px;
-    border-radius: 2px;
-    background-color: #D9E6F2;
-    transition: 0.3s;
-    hover{
-        background-color: #579BD9;
-        color: white;
-        transform: scale(1.1);
-    }
-
-}
-
-.Paragrafos{
     text-align: center;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 1.5;
 }
 
-.Imagens{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: 5px;
+main > h3 {
+    text-align: center;
+    color: #101f2d;
+    height: 200px;
+    width: 300px;
+}
+
+main > h3 > p {
+    margin: 20px;
+    padding: 10px;
+}   
+
+main > img {
+    display: flex;
     border: 2px solid #579BD9;
     border-radius: 5px;
 }
 
-.footer{
+footer {
     text-align: center;
-    background-color: #D9E6F2;
     padding: auto;
-    border-top: 2px solid #579BD9;
     margin-top: 20px;
 }
 
-.Rodape{
-    margin: 5px;
-    text-align: left;
-    display: flex;
+footer p {
+    margin: 10px;
+    padding: 10px;
 }
