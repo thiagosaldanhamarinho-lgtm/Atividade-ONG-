@@ -9,7 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border: 2px solid #579BD9;
-    margin: auto;
+    margin: 50px 10px 50px 10px;
     padding: auto;  
 }
 
@@ -41,6 +41,7 @@ body{
         color: white;
         transform: scale(1.1);
     }
+
 }
 
 .Paragrafos{
