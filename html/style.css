@@ -2,7 +2,7 @@
     margin: auto;
     padding: auto;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffffc5;
     align-items: center;
 }
 
@@ -14,14 +14,14 @@ body {
     padding: auto;
 }
 
-h1{
+h1 {
     color: #579BD9;
     text-align: center;
     margin: auto;
     padding: 10px 20px 10px 20px;
 }
 
-h2{
+h2 {
     color: #000000;
     text-align: center;
     margin: auto;
@@ -35,18 +35,22 @@ header {
     border-bottom: 2px solid #ffffff;
 }
 
-header>a {
+header > a {
+    display: flex;
     text-decoration: underline;
     color: #579BD9;
     background-color: #ffffff;
+    border: #000000 1px none;
+    box-shadow: #000000 2px 2px 5px;
     text-align: center;
     width: 200px;
     cursor: pointer;
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto 10px auto;
 
 }
 
-header>a:hover {
+header > a:hover {
     color: #0d0d0d;
 }
 
@@ -61,12 +65,39 @@ h3 {
     display: flex;
     text-align: justify;
     color: #D56900;
+    background-color: #ffffff3a;
+    box-shadow: #000000 2px 2px 10px;
+    border: #000000 2px none;
     width: 600px;
-    align-items: self-start;
+    align-items: center;
 }
 
-main >.Paragrafos {
+h3.Subtítulo {
+    display: flex;
+    text-align: center;
+    color: #D56900;
+    background-color: #ffffff3a;
+    box-shadow: #000000 2px 2px 10px;
+    border: #000000 2px none;
+    width: 600px;
+    align-items: center;
+}
+
+main > .Paragrafos {
     color: #000000;
+    background-color: #ffffff3a;
+    box-shadow: #000000 2px 2px 5px;
+    border: #000000 2px none;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+p.Paragrafos {
+    color: #000000;
+    background-color: #ffffff3a;
+    box-shadow: #000000 2px 2px 5px;
+    border: #000000 2px none;
     margin: 20px;
     padding: 20px;
     text-align: justify;
@@ -87,7 +118,7 @@ main.Cadastro {
     gap: 1.5rem;
 }
 
-nav>img {
+nav > img {
     display: flex;
     border: 2px solid #2b2c2d;
     border-radius: 5px;
@@ -103,28 +134,63 @@ nav {
 main form {
     display: flex;
     flex-direction: column;
-    align-items: normal;
+    align-items: center;
     margin-top: 20px;
     gap: 1.5rem;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: #579BD9;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+main button:hover {
+    background-color: #36363647;
 }
 
 footer {
     color: #D56900;
+    background-color: #ffffff3a;
     text-align: center;
     padding: auto;
     margin-top: 20px;
 }
 
-footer p {
-    color: #579BD9;
+footer > h2 {
+    color: #D56900;
+    background-color: #ffffff3a;
+    box-shadow: #000000 2px 2px 10px;
+    border: #000000 2px none;
     margin: 10px;
     padding: 10px;
+}
+
+footer p {
+    background-color: #44434353;
+    border: #000000 1px solid;
+    box-shadow: #000000 2px 2px 5px;
+    color: #000000;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 footer a {
     text-decoration: underline;
     color: #000000;
 }
+
 footer a:hover {
-    color: #000000;
+    color: #a35555;
 }
