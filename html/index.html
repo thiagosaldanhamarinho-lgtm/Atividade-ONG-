@@ -6,42 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrace Patas</title>
     <link rel="shortcut icon" href="../Imagens/Favicon/favicon_io (1)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ======= MENU HAMBÚRGUER ======= */
+        header {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav.menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav.menu a {
+            text-decoration: none;
+            color: darkred;
+            font-weight: bold;
+        }
+
+        /* Botão hamburguer */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .menu-toggle div {
+            width: 100%;
+            height: 3px;
+            background-color: darkred;
+            border-radius: 2px;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            nav.menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 100%;
+                padding: 15px 0;
+                border-top: 2px solid darkred;
+            }
+
+            nav.menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            nav.menu a {
+                padding: 10px;
+                display: block;
+            }
+        }
+
+        /* ======= OUTROS ELEMENTOS DO SITE ======= */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .Subtítulo {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .Paragrafos {
+            text-align: justify;
+            margin: 20px auto;
+            width: 80%;
+            line-height: 1.6;
+        }
+
+        nav#img {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        footer {
+            background-color: darkred;
+            color: gold;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Abrace Patas</h1>
+        <h1><strong><em>Abrace Patas</em></strong></h1>
         <h2>Um Novo Começo Espera Por Eles</h2>
+
+        <!-- Botão Menu Hambúrguer -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Menu de Navegação -->
+        <nav class="menu" id="menu">
+            <a href="Cadastro.html">Cadastro</a>
+            <a href="Projetos.html">Nossos Projetos</a>
+        </nav>
     </header>
+
+    <h3 class="Subtítulo">Bem vindo ao site da ONG Abrace Patas. Aqui você encontrará oportunidades de adoção e
+        de nos ajudar com o projeto para cuidar dos nossos queridos pets!
+    </h3>
+
     <main>
+        <p class="Paragrafos">Resgate. Reabilitação. Adoção. Junte-se a nós na missão de dar uma segunda chance a cada
+            vida de quatro patas.</p>
 
-        <a href="Cadastro.html">
-            <p>Cadastro</p>
-        </a>
-        <a href="Projetos.html">
-            <p>Nossos Projetos</p>
-        </a>
-
-        <p>Resgate. Reabilitação. Adoção. Junte-se a nós na missão de dar uma segunda chance a cada vida de quatro patas.</p>
-
-        <p>A cada minuto, um animal em situação de vulnerabilidade precisa de mais do que um lar: precisa de uma mão amiga. Na Abrace Patas, somos a ponte entre o abandono e o amor incondicional. Desde 2015 trabalhamos incansavelmente para resgatar, cuidar e reabilitar cães e gatos vítimas de maus-tratos ou abandono. Sua visita aqui já é um passo em direção à mudança. Explore nossos animais para adoção e descubra como você pode fazer a diferença hoje.</p>
-
-        <h3>
-            <p>Bem vindo ao site da ONG Abrace Patas. Aqui você encontrará oprtunidades de adoção e de nos ajudar com o
-                projeto
-                para cuidar dos nossos queridos pets!</p>
-        </h3>
-
-        <img width="450" height="350" src="../Imagens/Imagem 1.jpg" alt="Imagem 1">
+        <p class="Paragrafos">A cada minuto, um animal em situação de vulnerabilidade precisa de mais do que um lar:
+            precisa de uma mão amiga. Na Abrace Patas, somos a ponte entre o abandono e o amor incondicional. Desde 2015
+            trabalhamos incansavelmente para resgatar, cuidar e reabilitar cães e gatos vítimas de maus-tratos ou
+            abandono. Sua visita aqui já é um passo em direção à mudança. Explore nossos animais para adoção e descubra
+            como você pode fazer a diferença hoje.</p>
     </main>
+
+    <nav id="img">
+        <img class="img" width="600" height="500" src="../Imagens/Imagem 1.jpg" alt="Imagem 1">
+    </nav>
 
     <footer>
         <h2>Entre em contato conosco por um dos nossos canais de atendimento</h2> <br>
-        <p>Contato:00 00000-0000</p>
-        <p>Email:ongabracepatas@abracepatas.com.br</p>
-        <p>Telefone:00 00000-0000</p>
-        <p>Whatsapp:00 00000-0000</p>
+        <p class="Rodape">Contato: 00 00000-0000</p>
+        <p class="Rodape">Email: ongabracepatas@abracepatas.com.br</p>
+        <p class="Rodape">Telefone: 00 00000-0000</p>
+        <p class="Rodape">Whatsapp: 00 00000-0000</p>
     </footer>
+
+    <script>
+        // Script para abrir/fechar o menu
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
